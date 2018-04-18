@@ -1,0 +1,141 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\VRPROJEKTE\vvvv VR Template\subpatches\PoserPatch.v4p" systemname="PoserPatch" filename="C:\VRPROJEKTE\vvvv VR Template\subpatches\PoserPatch.v4p">
+   <NODE id="0" systemname="TrackedDevices (OpenVR)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="TrackedDevices (OpenVR)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="1500" top="2655" width="1200" height="270">
+   </BOUNDS>
+   <PIN pinname="Events" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="System" visible="1" slicecount="1" pintype="Input" values="||">
+   </PIN>
+   <PIN pinname="Device Index" visible="1">
+   </PIN>
+   <PIN pinname="Touch Transform" visible="1">
+   </PIN>
+   <PIN pinname="Trigger Press" visible="1">
+   </PIN>
+   <PIN pinname="Touchpad Press" visible="1">
+   </PIN>
+   <PIN pinname="Trigger Touch" visible="1">
+   </PIN>
+   <PIN pinname="Trigger Axis" visible="1">
+   </PIN>
+   <PIN pinname="Touchpad AxisXY" visible="1">
+   </PIN>
+   <PIN pinname="Touchpad Touch" visible="1">
+   </PIN>
+   <PIN pinname="Controller" visible="1">
+   </PIN>
+   <PIN pinname="All Controllers" visible="1">
+   </PIN>
+   <PIN pinname="Left and Right Controller" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Device Role" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="All Devices" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Box" left="-2370" top="1695" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="Event Device Index" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Left Controller" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Right Controller" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Error" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Poser (OpenVR)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="Poser (OpenVR)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1515" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Init" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Game Poses" visible="1">
+   </PIN>
+   <PIN pinname="Device Class" visible="1">
+   </PIN>
+   <PIN pinname="Error" visible="1">
+   </PIN>
+   <PIN pinname="System" visible="1">
+   </PIN>
+   <PIN pinname="HMD Pose" visible="1">
+   </PIN>
+   <PIN pinname="Lighthouse Poses" visible="1">
+   </PIN>
+   <PIN pinname="Controller Poses" visible="1">
+   </PIN>
+   <PIN pinname="Remaining Frame Time Pre" visible="1">
+   </PIN>
+   <PIN pinname="Remaining Frame Time Post" visible="1">
+   </PIN>
+   <PIN pinname="Sync After Frame" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Wait For Sync" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="2490" top="3090" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3705" top="2625" width="1335" height="300">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3705" top="2625" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="VRController">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="devnul">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2295" top="1995" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3705" top="1620" width="1590" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3705" top="1620" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="ControllerPoses">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="devnul">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="System" dstnodeid="0" dstpinname="System">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Controller Poses" dstnodeid="4" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="4" dstpinname="Send String">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Left and Right Controller" dstnodeid="2" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="2" dstpinname="Send String">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="5205" height="4690">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   </PATCH>

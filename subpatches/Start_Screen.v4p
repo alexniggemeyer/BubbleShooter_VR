@@ -1,0 +1,819 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\VRPROJEKTE\Niggemeyer_Alex\subpatches\Start_Screen.v4p" systemname="Start_Screen" filename="C:\VRPROJEKTE\Niggemeyer_Alex\subpatches\Start_Screen.v4p" scrollx="0" scrolly="7950">
+   <NODE systemname="CreateStaticBody (Bullet Rigid.Persist)" filename="%VVVV%\packs\dx11\nodes\plugins\bullet\VVVV.Nodes.Bullet.dll" nodename="CreateStaticBody (Bullet Rigid.Persist)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2160" top="13080" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2160" top="13080" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Bodies" visible="1">
+   </PIN>
+   <PIN pinname="Initial Pose" visible="1">
+   </PIN>
+   <PIN pinname="Shapes" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="World" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Do Create" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Id" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Pose (Bullet Join)" filename="%VVVV%\packs\dx11\nodes\plugins\bullet\VVVV.Nodes.Bullet.dll" nodename="Pose (Bullet Join)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="2760" top="12465" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2760" top="12465" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="PositionXYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="2160" top="11535" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="2685" top="10020" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2685" top="10020" width="795" height="720">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0.09,4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\text\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1830" top="14265" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1830" top="14265" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="497.9">
+   </PIN>
+   <PIN pinname="String" visible="1" slicecount="1082" values="|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|,|Hit to Start!|">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Segoe UI|">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|0.15663,0.15663,0.15663,1.00000|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="1305" top="16635" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1305" top="16635" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1635" top="1500" width="1455" height="990">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1635" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="2" visible="1" values="|SHOOT ME TO START|,|Get ready in|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="DX11">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="4770" top="12075" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Period" visible="1">
+   </PIN>
+   <PIN pinname="Reverse" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="4785" top="12975" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4755" top="11655" width="780" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4755" top="11655" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="4770" top="12510" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="1.5">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SetSlice (Spreads)" nodename="SetSlice (Spreads)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="4590" top="13425" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Spread" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="3195" top="7935" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="State">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\plugins\AutomataUI 1.7\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="3195" top="8535" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3195" top="8535" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="State" visible="1" slicecount="1" values="Init">
+   </PIN>
+   <PIN pinname="ElapsedStateTime" visible="1">
+   </PIN>
+   <PIN pinname="FadeInOut" visible="1">
+   </PIN>
+   <PIN pinname="StateActive" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="14" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="4185" top="7935" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4185" top="7935" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Start">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Init">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="3405" top="9015" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetContactDetails (Bullet)" filename="%VVVV%\packs\dx11\nodes\plugins\bullet\VVVV.Nodes.Bullet.dll" nodename="GetContactDetails (Bullet)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="3435" top="15960" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3435" top="15960" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="World" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Body 1" visible="1">
+   </PIN>
+   <PIN pinname="Body 2" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="3450" top="15390" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="3225" top="17415" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetBodyId (Bullet)" filename="%VVVV%\packs\dx11\nodes\plugins\bullet\VVVV.Nodes.Bullet.dll" nodename="GetBodyId (Bullet)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="3435" top="16575" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3435" top="16575" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Bodies" visible="1">
+   </PIN>
+   <PIN pinname="Id" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetBodyId (Bullet)" filename="%VVVV%\packs\dx11\nodes\plugins\bullet\VVVV.Nodes.Bullet.dll" nodename="GetBodyId (Bullet)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="3960" top="16995" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3960" top="16995" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Bodies" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Id" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="3210" top="18405" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="3210" top="19560" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="startGame">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="23">
+   <BOUNDS type="Node" left="3225" top="17955" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="3750" top="17415" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="3390" top="9525" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4515" top="8835" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4515" top="8835" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="3210" top="18945" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3210" top="18945" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="2760" top="5970" width="780" height="270">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="State">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\plugins\AutomataUI 1.7\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="2745" top="6600" width="705" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2745" top="6600" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="State" visible="1" slicecount="1" values="Init">
+   </PIN>
+   <PIN pinname="ElapsedStateTime" visible="1">
+   </PIN>
+   <PIN pinname="FadeInOut" visible="1">
+   </PIN>
+   <PIN pinname="StateActive" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="30" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="3660" top="5640" width="1005" height="600">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3660" top="5640" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="2" visible="1" values="Start,Counter">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Init">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (String)" nodename="Select (String)" componentmode="Hidden" id="31">
+   <BOUNDS type="Node" left="1710" top="7665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1" slicecount="2" values="1,0">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="32">
+   <BOUNDS type="Node" left="2010" top="5490" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="CarriageReturn">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="1995" top="2745" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SetSlice (String)" nodename="SetSlice (String)" componentmode="Hidden" id="34">
+   <BOUNDS type="Node" left="1710" top="7140" width="900" height="270">
+   </BOUNDS>
+   <PIN pinname="Spread" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="3345" top="1530" width="780" height="270">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="State">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\plugins\AutomataUI 1.7\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="3345" top="2430" width="705" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3345" top="2430" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="State" visible="1" slicecount="1" values="Init">
+   </PIN>
+   <PIN pinname="ElapsedStateTime" visible="1">
+   </PIN>
+   <PIN pinname="FadeInOut" visible="1">
+   </PIN>
+   <PIN pinname="StateActive" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="37" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="4005" top="1965" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4005" top="1965" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Counter">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Init">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="38">
+   <BOUNDS type="Node" left="3330" top="3405" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="60">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="3345" top="2925" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Source Maximum" slicecount="1" values="240">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="240">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="3330" top="3870" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Split (String)" nodename="Split (String)" componentmode="Hidden" id="41">
+   <BOUNDS type="Node" left="3330" top="4290" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="42">
+   <BOUNDS type="Node" left="3345" top="4725" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SetPose (Bullet Rigid)" filename="%VVVV%\packs\dx11\nodes\plugins\bullet\VVVV.Nodes.Bullet.dll" nodename="SetPose (Bullet Rigid)" componentmode="Hidden" id="43">
+   <BOUNDS type="Node" left="4260" top="14610" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4260" top="14610" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Bodies" visible="1">
+   </PIN>
+   <PIN pinname="Pose" visible="1">
+   </PIN>
+   <PIN pinname="Apply" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Pose (Bullet Join)" filename="%VVVV%\packs\dx11\nodes\plugins\bullet\VVVV.Nodes.Bullet.dll" nodename="Pose (Bullet Join)" componentmode="Hidden" id="44">
+   <BOUNDS type="Node" left="4575" top="13995" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4575" top="13995" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="PositionXYZ" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="45" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5190" top="13785" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5190" top="13785" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Box (Bullet)" filename="%VVVV%\packs\dx11\nodes\plugins\bullet\VVVV.Nodes.Bullet.dll" nodename="Box (Bullet)" componentmode="Hidden" id="46">
+   <BOUNDS type="Node" left="2475" top="11925" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2475" top="11925" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Shape" visible="1">
+   </PIN>
+   <PIN pinname="SizeXYZ" visible="1" slicecount="3" values="3.75,0.59,0.11">
+   </PIN>
+   <PIN pinname="ScalingXYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetBodyTransform (Bullet)" filename="%VVVV%\packs\dx11\nodes\plugins\bullet\VVVV.Nodes.Bullet.dll" nodename="GetBodyTransform (Bullet)" componentmode="Hidden" id="47">
+   <BOUNDS type="Node" left="2175" top="13605" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2175" top="13605" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Bodies" visible="1">
+   </PIN>
+   <PIN pinname="Position" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DestroyBody (Bullet)" filename="%VVVV%\packs\dx11\nodes\plugins\bullet\VVVV.Nodes.Bullet.dll" nodename="DestroyBody (Bullet)" componentmode="Hidden" id="48">
+   <BOUNDS type="Node" left="5565" top="14595" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5565" top="14595" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Bodies" visible="1">
+   </PIN>
+   <PIN pinname="Apply" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\plugins\AutomataUI 1.7\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="49">
+   <BOUNDS type="Node" left="5850" top="14040" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5850" top="14040" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="State" slicecount="1" values="Game">
+   </PIN>
+   <PIN pinname="StateActive" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="50">
+   <BOUNDS type="Node" left="5835" top="13530" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="State">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="5" dstpinname="Layer 2">
+   </LINK>
+   <NODE id="51" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Out|">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="20160" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="20160" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Layer Out" dstnodeid="51" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="31" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="StateActive" dstnodeid="31" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="34" dstpinname="Spread">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Output" dstnodeid="34" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="4" dstpinname="String">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Position" dstnodeid="4" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="33" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Output" dstnodeid="32" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Output" dstnodeid="32" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Input Value" dstnodeid="0" dstpinname="World">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Shape" dstnodeid="0" dstpinname="Shapes">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="0" dstpinname="Initial Pose">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="0" dstpinname="Do Create">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Bodies" dstnodeid="47" dstpinname="Bodies">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Input Value" dstnodeid="29" dstpinname="AutomataUI">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Output Enum" dstnodeid="29" dstpinname="State">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="1" dstpinname="PositionXYZ">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Input Value" dstnodeid="13" dstpinname="AutomataUI">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output Enum" dstnodeid="13" dstpinname="State">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="21" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Output 1" dstnodeid="22" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="27" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Id" dstnodeid="18" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Id" dstnodeid="18" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="23" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="23" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="38" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="40" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Output" dstnodeid="41" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Input Value" dstnodeid="36" dstpinname="AutomataUI">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Output Enum" dstnodeid="36" dstpinname="State">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="ElapsedStateTime" dstnodeid="39" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="42" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Up Edge" dstnodeid="25" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="FadeInOut" dstnodeid="15" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Input Value" dstnodeid="16" dstpinname="World">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Body 1" dstnodeid="19" dstpinname="Bodies">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Id" dstnodeid="24" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Id" dstnodeid="24" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Body 2" dstnodeid="20" dstpinname="Bodies">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Bodies" dstnodeid="43" dstpinname="Bodies">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="Output" dstnodeid="43" dstpinname="Pose">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Apply">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="44" dstpinname="PositionXYZ">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Spread">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Position Out" dstnodeid="11" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Period">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="8" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Bodies" dstnodeid="48" dstpinname="Bodies">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="StateActive" dstnodeid="48" dstpinname="Apply">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Input Value" dstnodeid="49" dstpinname="AutomataUI">
+   </LINK>
+   <BOUNDS type="Window" left="6285" top="3975" width="9795" height="10050">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="52">
+   <BOUNDS type="Node" left="1200" top="15690" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1200" top="15690" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" visible="1" values="|0.47915,0.47915,0.47915,1.00000|">
+   </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="52" srcpinname="Layer" dstnodeid="5" dstpinname="Layer 1">
+   </LINK>
+   <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="53">
+   <BOUNDS type="Node" left="1350" top="15150" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="ScaleY" slicecount="1" values="0.94" visible="1">
+   </PIN>
+   <PIN pinname="ScaleX" slicecount="1" values="2.75" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="47" srcpinname="Position" dstnodeid="53" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Transform Out" dstnodeid="52" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="55">
+   <BOUNDS type="Node" left="1170" top="13335" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Lightness" slicecount="1" values="0.63">
+   </PIN>
+   <PIN pinname="Saturation" slicecount="1" values="0.8">
+   </PIN>
+   <PIN pinname="Alpha" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Hue" slicecount="1" values="0.51">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Output" dstnodeid="52" dstpinname="Color">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="58">
+   <BOUNDS type="Box" left="75" top="11715" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="75" top="11715" width="0" height="0">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Output" dstnodeid="58" dstpinname="Color Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="59">
+   <BOUNDS type="Box" left="540" top="9735" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="540" top="9735" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2.75">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="53" dstpinname="ScaleX">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60">
+   <BOUNDS type="Box" left="585" top="9195" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="585" top="9195" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.94">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="53" dstpinname="ScaleY">
+   </LINK>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="61">
+   <BOUNDS type="Node" left="1395" top="10560" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="61" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="XYZ" dstnodeid="46" dstpinname="ScalingXYZ">
+   </LINK>
+   </PATCH>
